@@ -2,6 +2,13 @@
 
 **[Deutsch](#deutsch) · [English](#english)**
 
+| Scanner | Stoffdetails · Substance detail | Absperrradius · Isolation distance |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/scanner.jpg" alt="Live detection of an orange ADR placard" width="240"> | <img src="docs/screenshots/substance.png" alt="Substance detail for UN 1017, chlorine" width="240"> | <img src="docs/screenshots/map.jpg" alt="Isolation radius drawn on a map" width="240"> |
+
+Die Warntafel im ersten Bild ist synthetisch erzeugt, mit dem Generator aus `scripts/`.
+The placard in the first image is synthetic, produced by the generator in `scripts/`.
+
 ## Deutsch
 
 Offline-Gefahrstoff-Assistent für Feuerwehren. Kamera auf eine orange ADR-Warntafel
