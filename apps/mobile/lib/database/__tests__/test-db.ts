@@ -73,6 +73,25 @@ export const createTestDatabase = (
   return db;
 };
 
+type ERICardSeed = ISeedData['ericards'][number];
+
+/** ERICard row with the fields a test does not care about prefilled. */
+export const ericard = (overrides: Partial<ERICardSeed>): ERICardSeed => ({
+  un_number: '1203',
+  substance_name: 'BENZIN',
+  ericard_id: '3-01',
+  immediate_actions: JSON.stringify(['Zündquellen ausschließen']),
+  firefighting: JSON.stringify(['Schaum']),
+  personal_protection: JSON.stringify(['Chemikalienschutzanzug']),
+  first_aid: JSON.stringify(['Betroffene an die frische Luft bringen']),
+  spillage: JSON.stringify(['Eindämmen']),
+  hazards: JSON.stringify(['Leicht entzündbar']),
+  physical_properties: JSON.stringify(['Farblose Flüssigkeit']),
+  evacuation_distance_m: null,
+  water_hazard_class: null,
+  ...overrides,
+});
+
 type SubstanceSeed = ISeedData['substances'][number];
 
 /** Substance row with the fields a test does not care about prefilled. */

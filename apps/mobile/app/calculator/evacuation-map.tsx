@@ -241,18 +241,6 @@ export default function EvacuationMapScreen() {
           </Pressable>
 
           <Pressable
-            style={[styles.resetButton, !isAdjusted && styles.resetButtonDisabled]}
-            onPress={() => setRadiusMeters(calculatedRadius)}
-            disabled={!isAdjusted}
-            accessibilityRole="button"
-            accessibilityLabel="Auf berechneten Radius zurücksetzen"
-          >
-            <Text style={[styles.resetButtonText, !isAdjusted && styles.resetButtonTextDisabled]}>
-              Zurücksetzen ({calculatedRadius} m)
-            </Text>
-          </Pressable>
-
-          <Pressable
             style={styles.stepButton}
             onPress={() => setRadiusMeters((r) => r + RADIUS_STEP)}
             accessibilityRole="button"
@@ -262,10 +250,27 @@ export default function EvacuationMapScreen() {
           </Pressable>
         </View>
 
+        <Pressable
+          style={[styles.resetButton, !isAdjusted && styles.resetButtonDisabled]}
+          onPress={() => setRadiusMeters(calculatedRadius)}
+          disabled={!isAdjusted}
+          accessibilityRole="button"
+          accessibilityLabel="Auf berechneten Radius zurücksetzen"
+        >
+          <Text
+            style={[styles.resetButtonText, !isAdjusted && styles.resetButtonTextDisabled]}
+            numberOfLines={1}
+          >
+            Zurücksetzen ({calculatedRadius} m)
+          </Text>
+        </Pressable>
+
         <Text style={styles.footerHint}>
           Tippe auf die Karte, um den Mittelpunkt zu verschieben. Empfehlung - die
           Entscheidung liegt beim Einsatzleiter.
         </Text>
+
+        <Text style={styles.attribution}>Karte © OpenStreetMap-Mitwirkende</Text>
       </View>
     </View>
   );
@@ -387,6 +392,9 @@ const styles = StyleSheet.create({
     marginVertical: 8,
   },
   stepButton: {
+    // Split the row between them. They used to be pushed apart by the reset control that
+    // sat between them, and a wide target is worth having with gloves on.
+    flex: 1,
     backgroundColor: COLORS.primary,
     paddingVertical: 12,
     paddingHorizontal: 14,
@@ -397,7 +405,7 @@ const styles = StyleSheet.create({
   },
   stepButtonText: { color: COLORS.text, fontSize: 16, fontWeight: 'bold' },
   resetButton: {
-    flex: 1,
+    paddingVertical: 10,
     backgroundColor: COLORS.surfaceLight,
     borderRadius: 8,
     alignItems: 'center',
@@ -407,4 +415,5 @@ const styles = StyleSheet.create({
   resetButtonText: { color: COLORS.text, fontSize: 14, fontWeight: 'bold' },
   resetButtonTextDisabled: { color: COLORS.textSecondary },
   footerHint: { color: COLORS.textSecondary, fontSize: 11, fontStyle: 'italic' },
+  attribution: { color: COLORS.textSecondary, fontSize: 10, marginTop: 6 },
 });

@@ -111,10 +111,15 @@ Which terms apply to both datasets, and what the attribution has to carry, is in
 
     cd apps/mobile
     npm install
-    npx expo run:android
+    ./build-android.sh release --device
 
-The scanner needs a real device. The camera and the GPU frame processing do not work in
-an emulator.
+Always build onto a real device. The camera and the GPU frame processing do not work in an
+emulator, and with one configured `expo run:android` picks it without asking. A failed
+emulator start still exits zero, so that failure reads as a successful build.
+
+`./build-android.sh` without an argument builds the debug variant, which is the faster loop
+while developing. Use the release variant to check anything that behaves differently in a
+shipped app, the model loading above all.
 
 ## Tests
 

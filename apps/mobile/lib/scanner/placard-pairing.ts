@@ -6,7 +6,7 @@
  * lookup is injected as an UnNumberValidator.
  */
 
-// --- Number extraction (mirrors backend extract_numbers logic) ---
+// --- Number extraction ---
 
 const KEMLER_PATTERN = /^X?\d{2,3}$/;
 const UN_PATTERN = /^\d{4}$/;

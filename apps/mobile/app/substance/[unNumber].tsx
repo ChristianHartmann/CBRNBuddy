@@ -121,7 +121,7 @@ export default function SubstanceDetailScreen() {
           Stoff nicht gefunden
         </Text>
         <Text style={{ color: COLORS.textSecondary, fontSize: 14, textAlign: 'center' }}>
-          Kein Eintrag fuer UN {unNumber}
+          Kein Eintrag für UN {unNumber}
         </Text>
       </View>
     );
@@ -137,7 +137,7 @@ export default function SubstanceDetailScreen() {
           selectedIndex={selectedIndex}
           onSelect={setSelectedIndex}
           accessibilityLabelPrefix="Variante"
-          hint={`${variants.length} Eintraege zu UN ${substance.un_number}. Vorausgewaehlt ist der gefaehrlichste.`}
+          hint={`${variants.length} Einträge zu UN ${substance.un_number}. Vorausgewählt ist der gefährlichste.`}
         />
 
         <View style={styles.metaRow}>
@@ -179,7 +179,7 @@ export default function SubstanceDetailScreen() {
       {ericard ? (
         <>
           <ERICardSection
-            title="Einsatz-Massnahmen"
+            title="Einsatzmaßnahmen"
             icon={'\u{1F6A8}'}
             items={parseJsonField(ericard.immediate_actions)}
             defaultOpen
@@ -190,12 +190,12 @@ export default function SubstanceDetailScreen() {
             items={parseJsonField(ericard.hazards)}
           />
           <ERICardSection
-            title="Persoenlicher Schutz"
+            title="Persönlicher Schutz"
             icon={'\u{1F6E1}'}
             items={parseJsonField(ericard.personal_protection)}
           />
           <ERICardSection
-            title="Loeschmittel / Brandbekaempfung"
+            title="Löschmittel / Brandbekämpfung"
             icon={'\u{1F692}'}
             items={parseJsonField(ericard.firefighting)}
           />
@@ -205,7 +205,7 @@ export default function SubstanceDetailScreen() {
             items={parseJsonField(ericard.first_aid)}
           />
           <ERICardSection
-            title="Massnahmen bei Freisetzung"
+            title="Maßnahmen bei Freisetzung"
             icon={'\u{1F4A7}'}
             items={parseJsonField(ericard.spillage)}
           />
@@ -219,7 +219,7 @@ export default function SubstanceDetailScreen() {
       ) : (
         <View style={{ alignItems: 'center', marginTop: 32, paddingHorizontal: 32 }}>
           <Text style={{ color: COLORS.textSecondary, fontSize: 14, textAlign: 'center' }}>
-            Keine ERICard fuer diesen Stoff vorhanden
+            Keine ERICard für diesen Stoff vorhanden
           </Text>
         </View>
       )}

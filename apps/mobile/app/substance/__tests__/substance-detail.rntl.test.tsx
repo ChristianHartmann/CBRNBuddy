@@ -1,6 +1,6 @@
 import { render, screen, userEvent } from '@testing-library/react-native';
 
-import { createTestDatabase, substance } from '../../../lib/database/__tests__/test-db';
+import { createTestDatabase, ericard, substance } from '../../../lib/database/__tests__/test-db';
 import SubstanceDetailScreen from '../[unNumber]';
 
 // UN 1105 PENTANOLE really does exist twice in ADR Table A: Kemler 33 in packing group
@@ -12,7 +12,10 @@ const VARIANTS = [
 ];
 
 let mockParams: { unNumber: string; kemler?: string } = { unNumber: '1105' };
-const mockDb = createTestDatabase({ substances: VARIANTS });
+const mockDb = createTestDatabase({
+  substances: VARIANTS,
+  ericards: [ericard({ un_number: '1105', substance_name: 'PENTANOLE', ericard_id: '3-07' })],
+});
 
 jest.mock('expo-router', () => ({
   useLocalSearchParams: () => mockParams,
@@ -74,6 +77,15 @@ describe('SubstanceDetailScreen', () => {
 
     expect(screen.getByRole('button', { name: 'Variante VG II | Kemler 33' })).toBeOnTheScreen();
     expect(screen.getByRole('button', { name: 'Variante VG III | Kemler 30' })).toBeOnTheScreen();
+  });
+
+  it('writes the ERICard section titles in proper German', async () => {
+    await render(<SubstanceDetailScreen />);
+
+    expect(screen.getByText('Einsatzmaßnahmen')).toBeOnTheScreen();
+    expect(screen.getByText('Persönlicher Schutz')).toBeOnTheScreen();
+    expect(screen.getByText('Löschmittel / Brandbekämpfung')).toBeOnTheScreen();
+    expect(screen.getByText('Maßnahmen bei Freisetzung')).toBeOnTheScreen();
   });
 
   it('says so when the UN number is unknown', async () => {
