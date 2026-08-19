@@ -1,5 +1,46 @@
 # CBRN-Buddy
 
+**[Deutsch](#deutsch) · [English](#english)**
+
+## Deutsch
+
+Offline-Gefahrstoff-Assistent für Feuerwehren. Kamera auf eine orange ADR-Warntafel
+halten: Die App liest Kemler-Zahl und UN-Nummer, identifiziert den Stoff und zeigt die
+Sofortmaßnahmen. Alles auf dem Gerät, ohne Netzverbindung.
+
+Der Detektor ist ein eigens dafür trainiertes YOLO26-nano-Modell, nach TFLite exportiert
+und auf dem Gerät ausgeführt. Die Stoffdaten stammen aus ADR Tabelle A, die
+Einsatzmaßnahmen von den CEFIC ERICards.
+
+**Plattform: Android.** iOS wird nicht unterstützt, siehe [Lizenz](#licence).
+
+**Die App ist auf Deutsch**, sie ist für Feuerwehren in Deutschland, Österreich und der
+Schweiz gebaut. Code und Dokumentation sind auf Englisch.
+
+### Haftungsausschluss
+
+Diese App ist ein Hilfsmittel. Sie ersetzt weder Ausbildung noch Erfahrung noch die
+Beurteilung der Einsatzkräfte vor Ort; es entscheidet die Einsatzleitung. Alle Daten sind
+ohne Gewähr und können veraltet oder falsch sein. Alles, worauf es ankommt, ist gegen die
+geltenden Vorschriften zu prüfen; im Zweifel ist ein Fachberater Gefahrgut hinzuzuziehen.
+
+Das ist ein Hobbyprojekt, kein zertifiziertes Produkt.
+
+### Funktionsumfang
+
+- **Scanner**: Live-Erkennung oranger ADR-Warntafeln, OCR von Kemler-Zahl und UN-Nummer
+  auf dem Gerät, Stoffidentifikation. Trägt eine UN-Nummer mehrere Einträge, löst die
+  Kemler-Zahl auf, welcher davon auf dem Fahrzeug steht.
+- **Suche** nach UN-Nummer, Stoffname oder Kemler-Zahl
+- **ERICards** mit Sofortmaßnahmen, Gefahren, Schutzausrüstung, Löschmitteln
+- **Absperrradien** nach ERG 2024, mit Karte
+- **Rechner und Merkhilfen**: Atemluft, ppm-Umrechnung, Volumenabschätzung,
+  Beaufort-Skala, GAMS-Checkliste
+
+Die technische Dokumentation ab [Getting started](#getting-started) ist auf Englisch.
+
+## English
+
 An offline hazmat assistant for firefighters. Point the camera at an orange ADR placard
 and the app reads the Kemler and UN number, identifies the substance and shows the
 immediate measures, all on the device and without a network connection.
@@ -13,7 +54,7 @@ CEFIC ERICards.
 **The app language is German**, since it is built for fire services in Germany, Austria
 and Switzerland. Code and documentation are English.
 
-## Disclaimer
+### Disclaimer
 
 This app is an aid. It does not replace training, experience or the judgement of the
 people on scene, and the incident commander decides. All data is provided without
@@ -22,7 +63,7 @@ regulations and involve a hazmat adviser.
 
 This is a hobby project, not a certified product.
 
-## What it does
+### What it does
 
 - **Scanner**: live detection of orange ADR placards, on-device OCR of the Kemler and UN
   number, substance identification. Where a UN number has several entries, the Kemler
