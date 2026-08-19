@@ -1,0 +1,11 @@
+# CBRN-70 - YOLO26-nano Training (Stufe 3). Eigenes venv (torch ist groß):
+#   python -m venv scripts/.venv-train && scripts/.venv-train/bin/pip install -r scripts/requirements-train.txt
+# Auf Colab/RunPod ist ultralytics meist vorhanden; sonst hier installieren.
+ultralytics>=8.3.0
+pyyaml>=6.0
+# torch/torchvision werden von ultralytics als Abhängigkeit gezogen (CUDA-Build je nach Plattform).
+#
+# CBRN-71 (TFLite-INT8-Export, scripts/export-tflite.py): die Export-Kette
+# pt → ONNX → TF SavedModel → TFLite braucht tensorflow/onnx/onnx2tf. Diese Pakete
+# installiert ultralytics beim ersten Export automatisch nach (version-sensitiv, daher
+# bewusst nicht hier gepinnt). Bei Problemen den Export einmal isoliert laufen lassen.

@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "CBRN-Buddy",
+    "slug": "cbrn-buddy",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "cbrn-buddy",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#121212"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "de.cbrn-buddy.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#121212"
+      },
+      "edgeToEdgeEnabled": false,
+      "package": "de.cbrn_buddy.app",
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "CBRN-Buddy benötigt die Kamera, um Warntafeln und Gefahrzettel zu scannen.",
+          "recordAudioAndroid": false
+        }
+      ],
+      "@maplibre/maplibre-react-native",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "CBRN-Buddy nutzt deinen Standort, um den Absperrradius auf der Karte zu zentrieren."
+        }
+      ],
+      "react-native-fast-tflite",
+      "expo-asset",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 28
+          }
+        }
+      ],
+      "./plugins/with-raw-props-jsi-value"
+    ],
+    "extra": {
+      "router": {}
+    }
+  }
+}

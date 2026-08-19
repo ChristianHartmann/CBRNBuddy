@@ -1,0 +1,16 @@
+# YOLO-Datensatz-Konfiguration - CBRN-69 (Stufe 3, Warntafel-Erkennung)
+# Referenz-Template. Der Generator schreibt eine konkrete Kopie mit absolutem `path`
+# in das Datensatz-Verzeichnis (scripts/datasets/warntafeln/warntafeln.yaml).
+#
+# Verwendung beim Training (CBRN-70):
+#   yolo detect train data=scripts/datasets/warntafeln/warntafeln.yaml model=yolo26n.pt
+
+path: ./datasets/warntafeln # Datensatz-Wurzel (relativ zu scripts/ oder absolut)
+train: images/train
+val: images/val
+test: images/test
+
+nc: 1
+names:
+  - placard_orange # orange ADR-Warntafel (Kemler oben / UN unten)
+# Stufe 4 (später) ergänzt: diamond_label, ghs_pictogram

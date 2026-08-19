@@ -1,0 +1,32 @@
+node_modules/
+.expo/
+dist/
+*.tsbuildinfo
+__pycache__/
+*.pyc
+.venv/
+*.sqlite
+*.db
+
+# Native build output
+android/
+ios/
+*.apk
+*.aab
+
+# Data you fetch yourself, see README
+raw_data/
+
+# Generated training datasets and runs
+scripts/datasets/
+scripts/runs/
+runs/
+
+# PyTorch weights (pretrained downloads and checkpoints); the deployed format is TFLite
+*.pt
+
+# INT8 calibration cache from the TFLite export, regenerable
+calibration_image_sample_data_*.npy
+
+# Scraper progress, makes runs resumable
+scripts/.ericards-progress.json

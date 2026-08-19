@@ -1,0 +1,9 @@
+# CBRN-69 - Trainingsdaten-Toolchain (Stufe 3, Warntafel-Erkennung)
+# Eigenes venv: python -m venv scripts/.venv && scripts/.venv/bin/pip install -r scripts/requirements.txt
+pillow>=10.4.0
+numpy>=1.26.0
+opencv-python-headless>=4.10.0
+albumentations>=1.4.0
+pyyaml>=6.0
+tqdm>=4.66.0
+roboflow>=1.1.0

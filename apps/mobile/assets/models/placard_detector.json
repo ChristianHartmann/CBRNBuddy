@@ -1,0 +1,11 @@
+{
+  "model": "placard_detector.tflite",
+  "task": "detect",
+  "imgsz": 640,
+  "int8": true,
+  "names": [
+    "placard_orange"
+  ],
+  "recommended_conf": 0.25,
+  "source_weights": "scripts/runs/warntafeln/yolo26n/weights/best.pt"
+}

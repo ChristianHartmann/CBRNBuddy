@@ -1,0 +1,590 @@
+{
+  "meta": {
+    "source": "ERG 2024, Table 1 - Initial Isolation and Protective Action Distances",
+    "small_spill_threshold_liters": 208,
+    "notes": "Small spill = max 208L (55 US gal). Large spill = above 208L. Distances in meters."
+  },
+  "substances": [
+    {
+      "un_number": "1005",
+      "name": "Ammonia, anhydrous",
+      "guide": 125,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.2,
+      "small_spill_protection_night_km": 0.5,
+      "large_spill_isolation_m": 400,
+      "large_spill_protection_day_km": 2.4,
+      "large_spill_protection_night_km": 4.7
+    },
+    {
+      "un_number": "1008",
+      "name": "Boron trifluoride / Boron trifluoride, compressed",
+      "guide": 125,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.2,
+      "small_spill_protection_night_km": 0.7,
+      "large_spill_isolation_m": 400,
+      "large_spill_protection_day_km": 1.5,
+      "large_spill_protection_night_km": 2.9
+    },
+    {
+      "un_number": "1016",
+      "name": "Carbon monoxide, compressed",
+      "guide": 119,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.2,
+      "large_spill_isolation_m": 200,
+      "large_spill_protection_day_km": 0.7,
+      "large_spill_protection_night_km": 2.4
+    },
+    {
+      "un_number": "1017",
+      "name": "Chlorine",
+      "guide": 124,
+      "small_spill_isolation_m": 60,
+      "small_spill_protection_day_km": 0.3,
+      "small_spill_protection_night_km": 1.5,
+      "large_spill_isolation_m": 600,
+      "large_spill_protection_day_km": 1.2,
+      "large_spill_protection_night_km": 3.9
+    },
+    {
+      "un_number": "1026",
+      "name": "Cyanogen",
+      "guide": 119,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.3,
+      "large_spill_isolation_m": 200,
+      "large_spill_protection_day_km": 0.2,
+      "large_spill_protection_night_km": 0.7
+    },
+    {
+      "un_number": "1040",
+      "name": "Ethylene oxide / Ethylene oxide with nitrogen",
+      "guide": 119,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.2,
+      "large_spill_isolation_m": 60,
+      "large_spill_protection_day_km": 0.3,
+      "large_spill_protection_night_km": 1.1
+    },
+    {
+      "un_number": "1045",
+      "name": "Fluorine, compressed",
+      "guide": 124,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.2,
+      "large_spill_isolation_m": 100,
+      "large_spill_protection_day_km": 0.5,
+      "large_spill_protection_night_km": 2.3
+    },
+    {
+      "un_number": "1048",
+      "name": "Hydrogen bromide, anhydrous",
+      "guide": 125,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.2,
+      "large_spill_isolation_m": 150,
+      "large_spill_protection_day_km": 1.0,
+      "large_spill_protection_night_km": 3.2
+    },
+    {
+      "un_number": "1050",
+      "name": "Hydrogen chloride, anhydrous",
+      "guide": 125,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.3,
+      "large_spill_isolation_m": 200,
+      "large_spill_protection_day_km": 0.7,
+      "large_spill_protection_night_km": 1.8
+    },
+    {
+      "un_number": "1051",
+      "name": "Hydrogen cyanide, stabilized",
+      "guide": 117,
+      "small_spill_isolation_m": 60,
+      "small_spill_protection_day_km": 0.2,
+      "small_spill_protection_night_km": 0.4,
+      "large_spill_isolation_m": 600,
+      "large_spill_protection_day_km": 0.5,
+      "large_spill_protection_night_km": 1.8
+    },
+    {
+      "un_number": "1052",
+      "name": "Hydrogen fluoride, anhydrous",
+      "guide": 125,
+      "small_spill_isolation_m": 200,
+      "small_spill_protection_day_km": 0.7,
+      "small_spill_protection_night_km": 0.5,
+      "large_spill_isolation_m": 1250,
+      "large_spill_protection_day_km": 6.3,
+      "large_spill_protection_night_km": 11.1
+    },
+    {
+      "un_number": "1053",
+      "name": "Hydrogen sulfide / Hydrogen sulphide",
+      "guide": 117,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.3,
+      "large_spill_isolation_m": 200,
+      "large_spill_protection_day_km": 0.5,
+      "large_spill_protection_night_km": 2.1
+    },
+    {
+      "un_number": "1061",
+      "name": "Methylamine, anhydrous",
+      "guide": 118,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.2,
+      "large_spill_isolation_m": 200,
+      "large_spill_protection_day_km": 0.4,
+      "large_spill_protection_night_km": 1.3
+    },
+    {
+      "un_number": "1062",
+      "name": "Methyl bromide",
+      "guide": 123,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 150,
+      "large_spill_protection_day_km": 0.2,
+      "large_spill_protection_night_km": 0.5
+    },
+    {
+      "un_number": "1064",
+      "name": "Methyl mercaptan",
+      "guide": 117,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.3,
+      "large_spill_isolation_m": 200,
+      "large_spill_protection_day_km": 0.8,
+      "large_spill_protection_night_km": 2.4
+    },
+    {
+      "un_number": "1067",
+      "name": "Dinitrogen tetroxide / Nitrogen dioxide",
+      "guide": 124,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.4,
+      "large_spill_isolation_m": 400,
+      "large_spill_protection_day_km": 1.4,
+      "large_spill_protection_night_km": 3.3
+    },
+    {
+      "un_number": "1069",
+      "name": "Nitrosyl chloride",
+      "guide": 125,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.2,
+      "small_spill_protection_night_km": 1.0,
+      "large_spill_isolation_m": 800,
+      "large_spill_protection_day_km": 4.3,
+      "large_spill_protection_night_km": 9.6
+    },
+    {
+      "un_number": "1076",
+      "name": "Phosgene",
+      "guide": 125,
+      "small_spill_isolation_m": 100,
+      "small_spill_protection_day_km": 0.6,
+      "small_spill_protection_night_km": 2.5,
+      "large_spill_isolation_m": 500,
+      "large_spill_protection_day_km": 3.0,
+      "large_spill_protection_night_km": 9.5
+    },
+    {
+      "un_number": "1079",
+      "name": "Sulfur dioxide",
+      "guide": 125,
+      "small_spill_isolation_m": 100,
+      "small_spill_protection_day_km": 0.4,
+      "small_spill_protection_night_km": 1.6,
+      "large_spill_isolation_m": 1500,
+      "large_spill_protection_day_km": 5.9,
+      "large_spill_protection_night_km": 5.9
+    },
+    {
+      "un_number": "1082",
+      "name": "Trifluorochloroethylene, stabilized",
+      "guide": 119,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 60,
+      "large_spill_protection_day_km": 0.4,
+      "large_spill_protection_night_km": 0.7
+    },
+    {
+      "un_number": "1092",
+      "name": "Acrolein, stabilized",
+      "guide": 131,
+      "small_spill_isolation_m": 100,
+      "small_spill_protection_day_km": 0.2,
+      "small_spill_protection_night_km": 0.8,
+      "large_spill_isolation_m": 600,
+      "large_spill_protection_day_km": 1.3,
+      "large_spill_protection_night_km": 2.2
+    },
+    {
+      "un_number": "1098",
+      "name": "Allyl alcohol",
+      "guide": 131,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.2,
+      "small_spill_protection_night_km": 0.6,
+      "large_spill_isolation_m": 300,
+      "large_spill_protection_day_km": 0.8,
+      "large_spill_protection_night_km": 1.5
+    },
+    {
+      "un_number": "1135",
+      "name": "Ethylene chlorohydrin",
+      "guide": 131,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.2,
+      "small_spill_protection_night_km": 0.3,
+      "large_spill_isolation_m": 100,
+      "large_spill_protection_day_km": 0.5,
+      "large_spill_protection_night_km": 0.8
+    },
+    {
+      "un_number": "1143",
+      "name": "Crotonaldehyde / Crotonaldehyde, stabilized",
+      "guide": 131,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.2,
+      "large_spill_isolation_m": 200,
+      "large_spill_protection_day_km": 0.1,
+      "large_spill_protection_night_km": 0.5
+    },
+    {
+      "un_number": "1163",
+      "name": "Dimethylhydrazine, unsymmetrical",
+      "guide": 131,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 100,
+      "large_spill_protection_day_km": 0.7,
+      "large_spill_protection_night_km": 1.8
+    },
+    {
+      "un_number": "1182",
+      "name": "Ethyl chloroformate",
+      "guide": 155,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.2,
+      "small_spill_protection_night_km": 0.2,
+      "large_spill_isolation_m": 60,
+      "large_spill_protection_day_km": 0.4,
+      "large_spill_protection_night_km": 0.6
+    },
+    {
+      "un_number": "1238",
+      "name": "Methyl chloroformate",
+      "guide": 155,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.4,
+      "large_spill_isolation_m": 200,
+      "large_spill_protection_day_km": 1.2,
+      "large_spill_protection_night_km": 2.2
+    },
+    {
+      "un_number": "1239",
+      "name": "Methyl chloromethyl ether",
+      "guide": 131,
+      "small_spill_isolation_m": 60,
+      "small_spill_protection_day_km": 0.5,
+      "small_spill_protection_night_km": 1.5,
+      "large_spill_isolation_m": 300,
+      "large_spill_protection_day_km": 3.4,
+      "large_spill_protection_night_km": 5.7
+    },
+    {
+      "un_number": "1251",
+      "name": "Methyl vinyl ketone, stabilized",
+      "guide": 131,
+      "small_spill_isolation_m": 100,
+      "small_spill_protection_day_km": 0.2,
+      "small_spill_protection_night_km": 0.7,
+      "large_spill_isolation_m": 800,
+      "large_spill_protection_day_km": 1.1,
+      "large_spill_protection_night_km": 2.8
+    },
+    {
+      "un_number": "1259",
+      "name": "Nickel carbonyl",
+      "guide": 131,
+      "small_spill_isolation_m": 300,
+      "small_spill_protection_day_km": 0.9,
+      "small_spill_protection_night_km": 3.3,
+      "large_spill_isolation_m": 2500,
+      "large_spill_protection_day_km": 7.0,
+      "large_spill_protection_night_km": 7.0
+    },
+    {
+      "un_number": "1380",
+      "name": "Pentaborane",
+      "guide": 135,
+      "small_spill_isolation_m": 60,
+      "small_spill_protection_day_km": 0.6,
+      "small_spill_protection_night_km": 2.0,
+      "large_spill_isolation_m": 300,
+      "large_spill_protection_day_km": 3.0,
+      "large_spill_protection_night_km": 6.5
+    },
+    {
+      "un_number": "1510",
+      "name": "Tetranitromethane",
+      "guide": 143,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 30,
+      "large_spill_protection_day_km": 0.3,
+      "large_spill_protection_night_km": 0.5
+    },
+    {
+      "un_number": "1541",
+      "name": "Acetone cyanohydrin, stabilized",
+      "guide": 156,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.2,
+      "large_spill_isolation_m": 100,
+      "large_spill_protection_day_km": 0.3,
+      "large_spill_protection_night_km": 0.4
+    },
+    {
+      "un_number": "1556",
+      "name": "Methyldichloroarsine",
+      "guide": 152,
+      "small_spill_isolation_m": 150,
+      "small_spill_protection_day_km": 0.9,
+      "small_spill_protection_night_km": 2.2,
+      "large_spill_isolation_m": 1000,
+      "large_spill_protection_day_km": 2.5,
+      "large_spill_protection_night_km": 5.8
+    },
+    {
+      "un_number": "1560",
+      "name": "Arsenic trichloride",
+      "guide": 157,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.2,
+      "small_spill_protection_night_km": 0.3,
+      "large_spill_isolation_m": 300,
+      "large_spill_protection_day_km": 0.7,
+      "large_spill_protection_night_km": 1.5
+    },
+    {
+      "un_number": "1569",
+      "name": "Bromoacetone",
+      "guide": 154,
+      "small_spill_isolation_m": 60,
+      "small_spill_protection_day_km": 0.5,
+      "small_spill_protection_night_km": 1.2,
+      "large_spill_isolation_m": 150,
+      "large_spill_protection_day_km": 1.8,
+      "large_spill_protection_night_km": 3.3
+    },
+    {
+      "un_number": "1580",
+      "name": "Chloropicrin",
+      "guide": 154,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.4,
+      "large_spill_isolation_m": 200,
+      "large_spill_protection_day_km": 1.1,
+      "large_spill_protection_night_km": 2.4
+    },
+    {
+      "un_number": "1581",
+      "name": "Chloropicrin and methyl bromide mixture / Chloropicrin and methyl chloride mixture",
+      "guide": 123,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.5,
+      "large_spill_isolation_m": 300,
+      "large_spill_protection_day_km": 1.3,
+      "large_spill_protection_night_km": 3.7
+    },
+    {
+      "un_number": "1582",
+      "name": "Chloropicrin and methyl chloride mixture",
+      "guide": 119,
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.3,
+      "large_spill_isolation_m": 60,
+      "large_spill_protection_day_km": 0.5,
+      "large_spill_protection_night_km": 2.1
+    }
+  ],
+  "class_defaults": [
+    {
+      "class_code": "2.1",
+      "name": "Flammable gases",
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 100,
+      "large_spill_protection_day_km": 0.3,
+      "large_spill_protection_night_km": 0.5
+    },
+    {
+      "class_code": "2.2",
+      "name": "Non-flammable, non-toxic gases",
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 60,
+      "large_spill_protection_day_km": 0.1,
+      "large_spill_protection_night_km": 0.3
+    },
+    {
+      "class_code": "2.3",
+      "name": "Toxic gases",
+      "small_spill_isolation_m": 60,
+      "small_spill_protection_day_km": 0.3,
+      "small_spill_protection_night_km": 1.0,
+      "large_spill_isolation_m": 600,
+      "large_spill_protection_day_km": 2.0,
+      "large_spill_protection_night_km": 5.0
+    },
+    {
+      "class_code": "3",
+      "name": "Flammable liquids",
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 100,
+      "large_spill_protection_day_km": 0.3,
+      "large_spill_protection_night_km": 0.5
+    },
+    {
+      "class_code": "4.1",
+      "name": "Flammable solids",
+      "small_spill_isolation_m": 25,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 50,
+      "large_spill_protection_day_km": 0.1,
+      "large_spill_protection_night_km": 0.3
+    },
+    {
+      "class_code": "4.2",
+      "name": "Spontaneously combustible",
+      "small_spill_isolation_m": 25,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 50,
+      "large_spill_protection_day_km": 0.1,
+      "large_spill_protection_night_km": 0.3
+    },
+    {
+      "class_code": "4.3",
+      "name": "Dangerous when wet",
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.2,
+      "large_spill_isolation_m": 100,
+      "large_spill_protection_day_km": 0.3,
+      "large_spill_protection_night_km": 0.8
+    },
+    {
+      "class_code": "5.1",
+      "name": "Oxidizing substances",
+      "small_spill_isolation_m": 25,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 50,
+      "large_spill_protection_day_km": 0.1,
+      "large_spill_protection_night_km": 0.3
+    },
+    {
+      "class_code": "5.2",
+      "name": "Organic peroxides",
+      "small_spill_isolation_m": 25,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 100,
+      "large_spill_protection_day_km": 0.2,
+      "large_spill_protection_night_km": 0.3
+    },
+    {
+      "class_code": "6.1",
+      "name": "Toxic substances",
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.3,
+      "large_spill_isolation_m": 200,
+      "large_spill_protection_day_km": 0.5,
+      "large_spill_protection_night_km": 1.5
+    },
+    {
+      "class_code": "6.2",
+      "name": "Infectious substances",
+      "small_spill_isolation_m": 25,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 50,
+      "large_spill_protection_day_km": 0.1,
+      "large_spill_protection_night_km": 0.1
+    },
+    {
+      "class_code": "7",
+      "name": "Radioactive material",
+      "small_spill_isolation_m": 25,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 100,
+      "large_spill_protection_day_km": 0.3,
+      "large_spill_protection_night_km": 0.3
+    },
+    {
+      "class_code": "8",
+      "name": "Corrosive substances",
+      "small_spill_isolation_m": 30,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.2,
+      "large_spill_isolation_m": 100,
+      "large_spill_protection_day_km": 0.3,
+      "large_spill_protection_night_km": 0.8
+    },
+    {
+      "class_code": "9",
+      "name": "Miscellaneous",
+      "small_spill_isolation_m": 25,
+      "small_spill_protection_day_km": 0.1,
+      "small_spill_protection_night_km": 0.1,
+      "large_spill_isolation_m": 50,
+      "large_spill_protection_day_km": 0.1,
+      "large_spill_protection_night_km": 0.3
+    },
+    {
+      "class_code": "1",
+      "name": "Explosives",
+      "small_spill_isolation_m": 100,
+      "small_spill_protection_day_km": 0.5,
+      "small_spill_protection_night_km": 0.5,
+      "large_spill_isolation_m": 500,
+      "large_spill_protection_day_km": 1.0,
+      "large_spill_protection_night_km": 1.0
+    }
+  ]
+}
